@@ -1,0 +1,8 @@
+<h3>Add Subject Details</h3>
+                        <br><br>
+                        <form method="post">
+                            {% csrf_token %}
+                            {%include 'messages.html'%}
+                            {{form.as_p}}
+                           <button type="submit" class="btn btn-success">Add Subject</button>
+                          </form>

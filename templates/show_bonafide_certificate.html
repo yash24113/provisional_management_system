@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok Jagruti University</title>
+    <link rel="icon" href="/static/images/ljj.jpg">
+    <style>
+        .d1 
+        {
+            width:900px;
+            height:1200px;
+            border:5px solid black;
+            margin-top:100px;
+        }
+        .image 
+        {
+            margin-top:50px;
+        }
+        .head 
+        {
+            text-align: left;
+            margin-left:100px;
+        }
+        .head1
+        {
+            text-align: left;
+            margin-left:100px;
+        }
+    
+        .ii 
+        {
+            width:30px;
+            height:30px;
+         
+        }
+        .ii1
+        {
+            width:30px;
+            height:30px;
+            text-align: left;
+        }
+        .ii2 
+        {
+            width:30px;
+            height:30px;
+            text-align: right;
+        }
+        .ii3 
+        {
+            width:30px;
+            height:30px;
+       
+        }
+        .hh 
+        {
+            margin-right:0px;  
+        }
+        .footer 
+        {
+            background-color: aqua;
+            width:100%;
+            height:80px;
+            /* border:1px solid black; */
+            margin-top:65px;
+            border-top: 2px solid black;
+            
+        }
+        .d1
+        {
+            background-color: rgb(173, 243, 243);
+        }
+        .header 
+        {
+            color:blue;
+            font-size:50px;
+        }
+        .tt 
+        {
+            width:800px;
+            font-size:40px;
+        }
+        
+    </style>
+</head>
+<body class="bb">
+   
+    <center>   
+    <div class="d1">
+        <!-- <img src="/static/images/lj_about.jpg" style="width: 700px;" class="image" data-original-title="" title=""/>-->
+        <h1 class="header">L.J Instisute of Computer Application</h1>
+        <h1>Bonafide Certificate</h1>
+        <br><br>
+        {% for stu in students %} 
+        <h3>
+            This is to certify that <b>Ms/Mr {{ stu.sname }}</b> has enrolled in out Institute in ther year 2021.
+        </h3>
+        <h3>Details:</h3>
+        
+        <table  border="1px solid black;" class="tt">  
+            
+            <tr>  
+                <td>Student Name</td> 
+                <td>{{ stu.sname }}</td>
+            </tr>
+            <tr>
+                <td>Enrollment No.</td>
+                <td>{{ stu.enrollment }}</td>
+            </tr>
+            <tr>
+                <td>Collage</td>
+                <td>L J School Of Computer Application</td>
+            </tr>  
+            <tr>
+                <td>Programme</td> 
+                <td>{{ stu.did.name }}</td>  
+            </tr>
+            <tr>
+                <td>Course Duration</td>
+                <td>{{ stu.did.description}}</td>
+            </tr> 
+            <tr>
+                <td>Medium of Teaching</td>
+                <td>English</td>
+            </tr>
+                {% endfor %}  
+           
+        </table>
+               <br><br><br>
+        <h3 class="head">Director of the Instisute<br>
+        <u>Mr.Alok Manke</u></h3>
+        <!-- <br><br><br><br> -->
+        <footer class="footer">
+        <h3 class="hh">
+            Location: LJ Campus, Near Sarkhej-Sanand Circle, Off. S.G. Roado Ahmedabad -382210<br>
+            Tel: 079-29296364 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        
+            Email: ljmca@ljinstitutes.org &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+            website: ljku.edu.in &nbsp;&nbsp; &nbsp;&nbsp;
+        </h3>
+        </footer>
+    </div> 
+</center>
+
+</body>
+</html>

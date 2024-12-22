@@ -1,0 +1,51 @@
+ 
+<section class="header">
+    <h1><a href="/home" class="logo"><img src="/static/images/lj_logo.jpg">&nbsp;&nbsp;</a></h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Provisional Marksheet</button>
+            <div class="dropdown-content">
+                <a href="/add_provisional_request">Send Provisional Marksheet Request</a>
+                <a href="/show_provisional_request">View Provisional Marksheet Request</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Final Marksheet</button>
+            <div class="dropdown-content">
+                <a href="/add_final_request">Send Final Marksheet Request</a>
+                <a href="/show_final_request">View Final Marksheet Request</a>
+                <a href="/show_final_result">View Final Marksheet</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Bonafide Certificate</button>
+            <div class="dropdown-content">
+                <a href="/add_bonafide_request">Send Bonafide Certificate Request</a>
+                <a href="/show_bonafide_request">View Bonafide Certificate Request</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="history" style="color:white;text-decoration: none;">History</a></button>
+        </div>
+        {% if user.is_authenticated %}
+        <div class="dropdown">
+            <button class="dropbtn">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/images/user.jpg" alt="" class="uu"> {{ user.username }}
+            </button>
+            <div class="dropdown-content">
+                <a href="password_change">Change Password</a>
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+        {% else %}
+        <a href="/">Login</a>
+        {% endif %}
+    </nav>
+ </section>
+ <script>
+    function toggleMenu() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+ </script> 

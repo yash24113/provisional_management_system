@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Your Data</title>
+    <!-- Add your CSS styles here -->
+</head>
+<body>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-sm">  
+            <thead class="thead-dark">  
+            <tr>  
+                <th> ID</th>  
+                <th> Name</th> 
+                <th>Department</th>  
+                <th>Course</th>  
+                <th>Actions</th>  
+            </tr>  
+            </thead>  
+            <tbody>  
+        <!-- {% for stu in data %}   -->
+            <tr>  
+                <td>{{ data.user }}</td>  
+                <!-- <td>{{ person.sname }}</td> -->
+                <!-- <td>{{ person.cid.did.name }}</td>   
+                <td>{{ person.cid.name }}</td>   -->
+              
+                <td>  
+                    <a href="editdata/{{ stu.id }}"><span class="glyphicon glyphicon-pencil" ></span></a>  
+                    <a href="deletedata/{{ stu.id }}">Delete</a>  
+                </td>  
+            </tr>  
+        <!-- {% endfor %}   -->
+            </tbody>  
+        </table>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>

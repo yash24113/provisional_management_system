@@ -1,0 +1,51 @@
+  {% include 'messages.html' %} 
+                        <h1>Subject Details</h1>
+                        <div class="table-responsive">
+                    <table border="1px black">  
+                        <thead class="thead-dark">  
+                        <tr>  
+                            <th>Student Name</th> 
+                            <th>enrollment</th> 
+                            <th>Subejct Name</th>  
+                            <!-- <th>Componenet1</th>  
+                            <th>Componenet2</th>  
+                            <th>Componenet3</th>  
+                            <th>Componenet4</th> -->
+                            <th>Total Internal Marks (out of 50) </th>  
+                            <th>Total External Marks (out of 50/100)</th>  
+                            <th>Total Marks (out of 100/150)</th>
+                            <th>Actions</th>  
+                        </tr>  
+                        </thead>  
+                        <tbody>  
+                    {% for c in cour %}  
+                        <tr>  
+                            <td>{{ c.sid.sname }}</td>  
+                            <td>{{ c.sid.enrollment }}</td>  
+                            <td>{{ c.cid.name }}</td>  
+                            <!-- <td>{{ c.c1 }}</td>  
+                            <td>{{ c.c2 }}</td>  
+                            <td>{{ c.c3 }}</td>  
+                            <td>{{ c.c4 }}</td>   -->
+                            <td>{{ c.com_id.total }}</td>  
+                            <td>{{ c.com_id.c5 }}</td>  
+
+                            <td>{{ c.com_id.total1 }}</td>
+                           
+                          
+                           
+        <td>  
+            <a href="/editcourse/{{ c.cid }}"><span class="glyphicon glyphicon-pencil" >Update</span></a>  
+            <a href="/delete_sub/{{ c.sub_id }}"><span class="glyphicon glyphicon-trash">Delete</span></a>   
+        </td>   
+                        </tr>  
+                    {% endfor %}  
+                        </tbody>  
+                    </table>
+                                                         
+                    <br>  
+                    <br>  
+                    <center><a href="/addsub" class="btn btn-primary">Add New Subject</a></center>  
+                
+
+                    <h1>Total Marks : </h1>

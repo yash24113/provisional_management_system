@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lok Jagruti University</title>
+   <link rel="icon" href="/static/images/ljj.jpg">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+   <!-- {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'Untitled-1.css' %}"> -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- {% load static %} -->
+    <!-- <link rel="stylesheet" href="{% static 'assets/vendors/mdi/css/materialdesignicons.min.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/vendors/css/vendor.bundle.base.css' %}"> -->
+    {% load static %} 
+    <link  href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet"/>  
+    <style>
+        .logo{
+            width:200px;
+            height:100px;
+            padding-top: 20px;
+        }
+        .img_div 
+        {
+           margin-left: 600px; 
+           
+        }
+        .header {
+         position: sticky;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 1000;
+         width:100%;
+         height:100px;
+         /* background-image: url("/static/images/lj6.jpg"); /* The image used */
+ 
+           
+         display: flex;
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+         box-shadow: 0px;
+         align-items: center;
+         justify-content: space-between;
+         padding-right: 20rem;
+         padding-left: 10rem;
+      }
+
+      .header .logo {
+         font-size: 2.5rem;
+         color: black;
+      }
+
+      .header .navbar a {
+         font-size: 2rem;
+         margin-left: 2rem;
+         color:black;
+         text-decoration: none;
+      }
+
+      
+
+      .header .navbar a:hover {
+         color: lime;
+      }
+      select 
+      {
+        background-color: rgb(14, 216, 223);
+        color:white;
+        
+      }
+
+
+      .carousel {
+         width: 2000x;
+         height: 700px;
+      }
+
+      .carousel-inner>.item>img {
+         width: 1120px;
+         height: 900px;
+         margin-bottom: 100px;
+      }
+
+      .carousel-inner>.item>a>img {
+         width: 90px;
+      }
+
+      .w-100 {
+         width: 100% !important;
+         height: 5rem;
+      }
+
+      .carousel-inner>.carousel-item>img {
+         height: 90vh;
+         width: 100px;
+      }
+
+      .carousel-caption>h5 {
+         margin-top: 110px;
+         font-size: 20px;
+         color: rgba(255, 255, 255, 0.815);
+
+      }
+
+      .carousel-caption>.p1 {
+         margin-bottom: -25px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.p2 {
+         /* the world */
+         margin-bottom: -160px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.button2 {
+
+         /* margin-bottom: 300px; */
+         display: inline-block;
+         background: var(--black);
+         margin: 15rem;
+         color: var(--white);
+         font-size: 15px;
+         padding: 8px 2rem;
+         cursor: pointer;
+         text-decoration: none;
+      }
+
+      .button2:hover {
+         background: var(--main-color);
+         color: black;
+      }
+
+
+      .carousel {
+         width: 2000x;
+         height: 700px;
+         margin-top: 100px;
+      }
+
+      .carousel-inner>.item>img {
+         width: 1120px;
+         height: 900px;
+      }
+
+      .carousel-inner>.item>a>img {
+         width: 90px;
+      }
+
+      .w-100 {
+         width: 100% !important;
+         height: 5rem;
+      }
+
+      .carousel-inner>.carousel-item>img {
+         height: 90vh;
+         width: 100px;
+      }
+
+      .carousel-caption>h5 {
+         margin-top: 110px;
+         font-size: 20px;
+         color: rgba(255, 255, 255, 0.815);
+
+      }
+
+      .carousel-caption>.p1 {
+         margin-bottom: -25px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.p2 {
+         /* the world */
+         margin-bottom: -160px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.button2 {
+
+         /* margin-bottom: 300px; */
+         display: inline-block;
+         background: var(--black);
+         margin: 15rem;
+         color: var(--white);
+         font-size: 15px;
+         padding: 8px 2rem;
+         cursor: pointer;
+         text-decoration: none;
+      }
+
+      .button2:hover {
+         background: var(--main-color);
+         color: black;
+      }
+
+
+
+      /* .carousel-inner>.item {
+         position: relative;
+         display: none;
+         -webkit-transition: 0.1s ease-in-out left;
+         -moz-transition: 0.1s ease-in-out left;
+         -o-transition: 0.1s ease-in-out left;
+         transition: 0.1s ease-in-out left;
+       } */
+   </style>
+
+</head>
+
+<body>
+   <!-- header section starts  -->
+
+
+
+   <style type="text/css">
+       * {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         outline: none;
+         border: none;
+         text-decoration: none;
+         text-transform: capitalize;
+      }
+
+      html {
+         font-size: 62.5%;
+         overflow-x: hidden;
+      }
+
+ 
+.header .navbar a:hover{
+   color:lime;
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: white;
+   display: flex;
+   padding-top: 2rem;
+
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+
+.header .logo{
+   font-size: 2.5rem;
+   color:black;
+   margin-left:10px;
+   text-decoration:none;
+}
+
+
+.header .navbar a{
+   font-size: 2rem;
+   
+   margin-right: 30px;
+   
+   color:black;
+   text-decoration:none;
+}
+
+.header .navbar a:hover{
+   color:white;
+   background-color:brown;
+   /* padding-left:25px; */
+   padding: 5px;
+   
+}
+
+.heading{
+   background-size: cover !important;
+   background-position: center !important;
+   padding-top: 10rem;
+   padding-bottom:15rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:lime;
+}
+
+      #travel {
+         text-decoration: none;
+      }
+
+
+
+      /*header css ends*/
+
+      /*section 1 css first*/
+      .home {
+         padding: 0;
+      }
+
+      .home .slide {
+         text-align: center;
+         padding: 2rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-size: cover !important;
+         background-position: center !important;
+         min-height: 60rem;
+      }
+
+      .content {
+         width: 100%;
+
+      }
+
+      .content {
+         display: inline-block;
+      }
+
+      .content span {
+         display: block;
+         font-size: 2.2rem;
+         color: white;
+         padding-bottom: 1rem;
+         animation: fadeIn .2s linear backwards .2s;
+      }
+
+      .content h3 {
+         font-size: 6vw;
+         color: var(--white);
+         text-transform: uppercase;
+         line-height: 1;
+         text-shadow: var(--text-shadow);
+         padding: 1rem 0;
+         animation: fadeIn .2s linear backwards .4s;
+      }
+
+      .content .btn {
+         animation: fadeIn .2s linear backwards .6s;
+      }
+
+      .btn {
+         display: inline-block;
+         background: var(--black);
+         margin-top: 1rem;
+         color: var(--white);
+         font-size: 1.7rem;
+         padding: 1rem 3rem;
+         cursor: pointer;
+      }
+
+      .btn:hover {
+         background: var(--main-color);
+      }
+
+      /*sextion 1 css ends*/
+
+      /*section css starts*/
+      
+      .services {
+         /* padding-right: 10rem;
+         padding-left: 10rem; */
+         margin-top:250px; 
+         background-color: #000000ac;
+         color:darkblack;
+         font-size: 50px;
+         font-weight: bold;
+         background-image: url("/static/images/c5.jpg"); /* The image used */
+      
+  /* background-position: ; Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+         
+      }
+
+      .services .box-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+         gap: 1.5rem;
+      }
+
+      .services .box-container .boxx {
+         padding: 2rem 2rem;
+         text-align: center;
+         background: var(--main-color);
+         cursor: pointer;
+      }
+
+      .services .box-container .boxx:hover {
+         background: var(--black);
+      }
+
+      .services .box-container .boxx img {
+         height: 7rem;
+      }
+
+      .services .box-container .boxx h3 {
+         color: var(--white);
+         font-size: 1.7rem;
+         padding-top: 1rem;
+      }
+
+      .heading-title {
+         text-align: center;
+         margin-bottom: 3rem;
+         font-size: 6rem;
+         text-transform: uppercase;
+         color: var(--black);
+      }
+
+      /* .footer 
+      {
+        width:100%;
+        height:500px;
+        background-color: blue;
+      } */
+
+      .footer {
+         /* background: url(/static/images/footer.jpg) no-repeat;
+         background-size: cover;
+         background-position: center; */
+         background-color:black;
+         color:white;
+         height:400px;
+        
+         padding-top: 5rem;
+         padding-bottom: 5rem;
+      }
+
+      .footer .box-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+         gap: 3rem;
+         padding-left: 10rem;
+         /* padding-top:100px; */
+         
+      }
+
+
+      .footer .box-container .box h3 {
+         color: var(--white);
+         font-size: 2.5rem;
+         padding-bottom: 2rem;
+      }
+
+      .footer .box-container .box a {
+         color: var(--light-white);
+         font-size: 1.5rem;
+         padding-bottom: 1.5rem;
+         display: block;
+         text-decoration: none;
+      }
+
+      .footer .box-container .box a i {
+         color: var(--main-color);
+         padding-right: .5rem;
+         transition: .3s linear;
+         text-decoration: none;
+         margin-bottom: 00px;
+      }
+
+      .footer .box-container .box a:hover i {
+         padding-right: 2rem;
+      }
+     
+
+      .footer .credit {
+         text-align: center;
+         padding-top: 3rem;
+         margin-top: 3rem;
+         border-top: .1rem solid var(--light-white);
+         font-size: 2rem;
+         color: var(--white);
+         background-color:brown;
+      }
+
+      .footer .credit span {
+         color: var(--main-color);
+      }
+
+
+       .footer .box 
+       {
+        width:200px;
+        height:200px;
+       /* margin-top:300px; */
+       }
+
+      
+
+      
+
+      .last 
+      {
+        margin-right: 200px;
+      }
+
+      .fa 
+      {
+         color:brown;
+      }
+
+      .cen 
+      {
+        background-color: red;
+      }
+      .uu 
+{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+      
+
+      
+
+      .last 
+      {
+        margin-right: 200px;
+      }
+
+      .fa 
+      {
+         color:white;
+      }
+
+   
+      .dropdown {
+  position: relative;
+  display: inline-block;
+  font-size:20px;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border:2px solid blue;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* background-color:black; */
+}
+.dropdown:hover .dropbtn
+{
+   background-color:brown;
+   padding:5px;
+   color:white;
+}
+.b  
+ {
+    height: 30px;
+    width: 200px;
+    padding-left: 15px;
+    border: 2px solid;
+    position: sticky;
+ }
+
+ .dropdown1 {
+  position: relative;
+  display: inline-block;
+  font-size:20px;
+ 
+}
+
+.dropdown1-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border:2px solid blue;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+ 
+}
+
+.dropdown1:hover .dropdown1-content1 {
+  display: block;
+  /* background-color:black; */
+}
+.dropdown1:hover .dropbtn1
+{
+   background-color:brown;
+   padding:5px;
+   color:white;
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1><a href="home" class="logo"><img src="/static/images/lj_logo.jpg" width="300px" height="90px">&nbsp;&nbsp; </a></h1>
+  
+          
+        
+        
+        
+        <nav class="navbar">
+         <div class="dropdown">
+               <button class="dropbtn">Provisional Marksheet</button>
+            <div class="dropdown-content">
+               <a href="/add_provisional_request">Send Provisional Marksheet Request</a><br>
+               <a href="/show_provisional_request">View Provisional Marksheet Request</a>
+               </div>
+               </div>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <div class="dropdown">
+               <button class="dropbtn">Final Marksheet</button>
+                        <div class="dropdown-content">
+                           <a href="/add_final_request">Send Final Marksheet Request</a><br>
+                           <a href="/show_final_request">View Final Marksheet Request</a><br>
+                           <a href="/show_final_result">View Final Marksheet </a>
+                           </div>
+                           </div>
+                           
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <div class="dropdown">
+                   <button class="dropbtn">Bonafide Certificate</button>
+                  <div class="dropdown-content">
+                     <a href="/add_bonafide_request">Send Bonafide Certificate Request</a><br>
+                     <a href="/show_bonafide_request">View Bonafide Certificate Request</a><br>
+                    
+                     </div>
+                     </div>
+               <div class="dropdown">
+                        <button class="dropbtn"><a href="history">History</a></button>
+                       <!-- <div class="dropdown-content">
+                          <a href="add_bonafide_request">Send Bonafide Certificate Request</a><br>
+                          <a href="show_bonafide_request">View Bonafide Certificate Request</a><br>
+                         
+                          </div> -->
+                          </div>
+                     <div class="dropdown">
+               
+                        
+             
+      {% if user.is_authenticated %}
+         <div class="dropdown">
+               
+            <button class="dropbtn">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/images/user.jpg" alt="" class="uu">  {{ user.username }}</button>
+            <div class="dropdown-content">
+               
+ <a href="password_change">Change Password</a><br>
+ <a href="logout">Logout</a>
+ {% else %}
+ 
+   <a href="/">Login</a>
+ {% endif %}
+                    </nav>
+         
+  
+        </section>
+        <br><br><br><br><br><br><br><br>
+        
+     <style>
+      /* .submit 
+      {
+         margin-left:400px;
+         background-color: blue;
+      } */
+   </style>
+        <section>
+			<div class="kf_content_wrap">
+				<div class="gallery-masonery_page gallery inner-content-holder">
+					<div class="container">
+						<div class="row">
+								
+								<div id="feedback_view" class="col-md-6 col-sm-12 col-xs-12">
+									<div class="edu_testemonial_wrap">
+										<figure><img alt="" src="/static/images/f17.jpg" height="350px"/></figure>
+										<div class="kode-text">
+											<div style="color:black;" class="feedback-blog">
+												<p class="set-full-text">
+													“At the Age of 59, after a 34-year interval I decided to be a student again. As one can imagine, it was a difficult task. I have to thank the well experienced and passionate faculties of L.J University for making it easier.
+It has been a great learning opportunity and has given me a lifetime worth of memories. 
+Masters in Urban and Regional planning is a well-planned program and it leads to change your perception on city planning field. I strongly recommend this program to anyone, who wanting to expand their planning skills. ”
+Amrut Kapadia
+
+												</p>
+												<p class="set-display-text o_hidden"></p>
+											</div>
+											<a>Amrut Kapadia<span>- Student</span></a>
+										</div>
+									</div>
+								</div>
+							
+								<div id="feedback_view" class="col-md-6 col-sm-12 col-xs-12">
+									<div class="edu_testemonial_wrap">
+										<figure><img alt="" src="/static/images/f18.jpg" height="350px"/></figure>
+										<div class="kode-text">
+											<div style="color:black;" class="feedback-blog">
+												<p class="set-full-text">
+													Being and practicing as an architect by profession, for last 16 and a half years, have seen how the spatial design mends mindset’s & philosophies, upgrades lifestyles, makes life easier. I had never imagined that this course of Masters in Urban and Regional Planning will provide such a vantage point, ‘a god like’ view to all things big and small, that it will change my perceptions on things altogether. It opened doors after doors of knowledge unlimited. I would highly recommend this course not just to try your mettle but to gain the opportunities and wisdom that will come with this knowledge. Finally, I would applaud the consortium of knowledge providers LJ has curated, which is at par with excellence. – Hanumantsinh Raol
+												</p>
+												<p class="set-display-text o_hidden"></p>
+											</div>
+											<a>Hanumantsinh Raol<span>- Student</span></a>
+										</div>
+									</div>
+								</div>
+							
+								<div id="feedback_view" class="col-md-6 col-sm-12 col-xs-12">
+									<div class="edu_testemonial_wrap">
+										<figure><img alt="" src="/static/images/f19.jpg" height="350px"/></figure>
+										<div class="kode-text">
+											<div style="color:black;" class="feedback-blog">
+												<p class="set-full-text">
+													In 2019, I had completed my bachelors in the field of Architecture. I want to start my masters and for the same, I searched and visited many institutions. In 2020, L J University started Master of Urban & Regional Planning, I had referred curriculum and decided to complete my masters from L J University. In a span of two years of M.Plan., I have tremendous learning experience which has enhanced my perspective towards urban planning and importance of various urban services for the better of ecosystem. There has been continuous support, motivation and guidance from our faculty members. I am pleased and indebted with LJ institute of planning.
+– Ar. Mahesh H Shah
+
+												</p>
+												<p class="set-display-text o_hidden"></p>
+											</div>
+											<a>Mahesh Shah<span>- Student</span></a>
+										</div>
+									</div>
+								</div>
+							
+								<div id="feedback_view" class="col-md-6 col-sm-12 col-xs-12">
+									<div class="edu_testemonial_wrap">
+										<figure><img alt="" src="static/images/f20.jpg" height="350px"/></figure>
+										<div class="kode-text">
+											<div style="color:black;" class="feedback-blog">
+												<p class="set-full-text">
+													Masters in Urban and Regional Planning at L.J. school of planning is an influential landmark in the city of Ahmedabad. This multidisciplinary course is imbibed with exploring urban fabric, experiencing professional practices and rigorously developing the scope of interventions for the same. I experience a cognitive journey here at L.J. school of planning holding best qualified and experienced faculties of their respective field and my colleagues with whom I get an everyday opportunity to work, learn and boost my educational outcomes throughout.
+
+Ar. Hardi Bhavani
+												</p>
+												<p class="set-display-text o_hidden"></p>
+											</div>
+											<a>Hardi Bhavani<span>- Student</span></a>
+										</div>
+									</div>
+								</div>
+							
+
+						</div>
+					</div>
+               <div class="col-md-12">
+                  <div class="kf_edu_pagination_wrap">
+                     
+     <ul class=" pagination">
+         <li class="">
+             <a aria-label="Previous" href="feedback3"><span aria-hidden="true"><i class="fa fa-angle-left"></i>Prev</span></a>
+         </li>
+         
+             <li> <a href="/feedback">1</a></li>
+         
+             <li> <a href="feedback1">2</a></li>
+         
+             <li> <a href="feedback2">3</a></li>
+         
+             <li> <a href="feedback3">4</a></li>
+         
+             <li class="active"> <a href="feedback4">5</a></li>
+         
+         <li class="disabled">
+             <a aria-label="Next" href=""><span aria-hidden="true">Next<i class="fa fa-angle-right"></i></span></a>
+         </li>
+     </ul>
+   
+                  </div>
+               </div>
+         </div>
+
+      </div>
+   </section>
+   
+             </main>
+             <br><br><br><br></b>
+             <section class="footer">
+            
+            <div class="box-container">
+               <div class="box">
+              <h3>Information</h3>
+              <a href="about"> <i class="fas fa-angle-right"></i> About</a>
+              <a href="#"> <i class="fas fa-angle-right"></i> Gallery</a>
+              
+             
+              <a href="feedback"> <i class="fas fa-angle-right"></i> Feedback</a>
+           
+             
+                 
+               
+                  <a href="blog"> <i class="fas fa-angle-right"></i> Blogs</a>
+           
+                   </div>
+   
+               <div class="box">
+                  <h3>extra links</h3>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Ask questions</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> About us</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Privacy policy</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Terms of use</a>
+               </div>
+   
+               <div class="box">
+                  <h3>Contact info</h3>
+                  <a href="tel://18001210082"> <i class="fas fa-phone"></i> 18001210082 </a>
+                  <a href=" info@ljku.edu.in"> <i class="fas fa-envelope"></i> info@ljku.edu.in </a>
+                  <a href="#"> <i class="fas fa-map"></i>Near Sarkhej-Sanand Circle,Off. S.G. Road, Ahmedabad-382210</a>
+                    
+                      
+               </div>
+   
+
+               
+               <div class="box">
+                  <h3>follow us</h3>
+                  <a href="https://www.facebook.com/lokjagrutiuniversity"> <i class="fab fa-facebook-f"></i> facebook </a>
+                  <a href="https://twitter.com/lj_university"> <i class="fab fa-twitter"></i> twitter </a>
+                  <a href="https://www.instagram.com/lj_university/"> <i class="fab fa-instagram"></i> instagram </a>
+                  <a href="https://www.linkedin.com/school/ljuniversityofficial/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                  <a href="https://www.youtube.com/channel/UC6cUvf8NQf36hIMGj6J1DTg/featured"> <i class="fab fa-youtube"></i> youtube </a>
+                  <a href="https://wa.me/916357000987?text="> <i class="fab fa-whatsapp"></i> whatsapp </a>
+                </div>
+                </div>
+                <br><br><br>
+                <div class="credit">  
+                <a href="#">
+                    <img width="52px" class="last" src="/static/images/ljj.jpg" title="Lok Jagruti University"/>
+                  </a>
+            <span>&copy; All Rights reserved by <a href="#" style="text-decoration:none;color:white";>LJKU</a></span></div>
+   
+         </section>
+   
+   
+         </div>
+         </section>
+         
+</body>
+</html>

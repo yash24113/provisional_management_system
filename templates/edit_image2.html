@@ -1,0 +1,132 @@
+<!--   
+
+    <title>Index</title>  
+    {% load static %}
+    <link  href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet"/>  
+  
+   
+   
+</head>  
+<body>  
+  <div class="container">  
+    <h1>Update Images</h1>
+<form method="POST" class="post-form" action="/update/{{hotel.id}}">  
+        {% csrf_token %}  
+    <div class="container">  
+        <div class="form-group row">  
+            <label class="col-sm-2 col-form-label">Image Name:</label>  
+            <div class="col-sm-4">  
+                <input type="text" name="name" id="id_name"  value="{{ hotel.name }}" />  
+            </div>  
+          </div>   
+          <div class="form-group row">  
+            <label class="col-sm-2 col-form-label">Image :</label>  
+            <div class="col-sm-4">  
+                <input type="file" name="hotel_Main_Img.url" id="id_hotel_Main_Img"  value="{{ hotel.hotel_Main_Img}}" />  
+            </div>  
+          </div>   
+    <button type="submit" class="btn btn-primary">Upload Image</button>
+</form>
+<script>
+    var img = document.forms['myform']['hotel_Main_Img'];
+    var validExt = ["jpg"];
+    function validation()
+    {
+        if(img.value!='')
+        {
+            var pos_of_dot = img.value.lastIndexOf('.')+1;
+            var img_ext=img.value.substring(pos_of_dot);
+            // console.log(img_ext);
+            var result = validExt.includes(img_ext);
+            // console.log(result);
+            if(result==false)
+            {
+                alert('upload only jpg file');
+                return false;
+            }
+            else
+            {
+                if(parseFloat(img.files[0].size/(512*2))>=15)  
+                {
+                    alert("File Size is less than 15 KB. Current File size :" + parseFloat(img.files[0].size/(512*2)) );
+                    return false;
+                }  
+            }
+        }
+        else
+        {
+            alert("No Image is selected")
+            return false; 
+        }
+    return true;
+    }
+</script> --> 
+
+
+<title>Index</title>  
+    {% load static %}
+    <link  href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    <head>
+     
+    </head>  
+    <div class="container">  
+        <h1>Update Images</h1>
+<form method="post" enctype="multipart/form-data" onsubmit="return validation()"  name="myform" action="/update/{{hotel.id}}">
+    {% csrf_token %}
+  
+
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Image Name:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="name" value="{{ hotel.name }}" />  
+        </div>  
+      </div>   
+      <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Image :</label>  
+        <div class="col-sm-4">  
+          
+            <input type="file" name="hotel_Main_Img"   value="{{ hotel.hotel_Main_Img.url }}" />  
+            
+        </div>  
+      </div>  
+       
+    <button type="submit" class="btn btn-primary">Update Image</button>
+</form>
+
+
+<!-- <script>
+    var img = document.forms['myform']['hotel_Main_Img'];
+    var validExt = ["jpg"];
+    function validation()
+    {
+        if(img.value!='')
+        {
+            var pos_of_dot = img.value.lastIndexOf('.')+1;
+            var img_ext=img.value.substring(pos_of_dot);
+            // console.log(img_ext);
+            var result = validExt.includes(img_ext);
+            // console.log(result);
+            if(result==false)
+            {
+                alert('upload only jpg file');
+                return false;
+            }
+            else
+            {
+                if(parseFloat(img.files[0].size/(512*2))>=15)  
+                {
+                    alert("File Size is less than 15 KB. Current File size :" + parseFloat(img.files[0].size/(512*2)) );
+                    return false;
+                }  
+            }
+        }
+        else
+        {
+            alert("No Image is selected")
+            return false; 
+        }
+       
+    alert('Update Image Successfully.....!');  
+    return true;
+    }
+</script> -->

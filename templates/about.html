@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok Jagruti University</title>
+   <link rel="icon" href="/static/images/ljj.jpg">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+   <!-- {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'Untitled-1.css' %}"> -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- {% load static %} -->
+    <!-- <link rel="stylesheet" href="{% static 'assets/vendors/mdi/css/materialdesignicons.min.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/vendors/css/vendor.bundle.base.css' %}"> -->
+    {% load static %} 
+    <link  href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet"/>  
+    <style>
+        .logo{
+            width:200px;
+            height:100px;
+            padding-top: 20px;
+        }
+        .img_div 
+        {
+           margin-left: 600px; 
+           
+        }
+        .header {
+         position: sticky;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 1000;
+         width:100%;
+         height:100px;
+         /* background-image: url("/static/images/lj6.jpg"); /* The image used */
+ 
+           
+         display: flex;
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+         box-shadow: 0px;
+         align-items: center;
+         justify-content: space-between;
+         padding-right: 20rem;
+         padding-left: 10rem;
+      }
+
+      .header .logo {
+         font-size: 2.5rem;
+         color: black;
+      }
+
+      .header .navbar a {
+         font-size: 2rem;
+         margin-left: 2rem;
+         color:black;
+         text-decoration: none;
+      }
+
+      
+
+      .header .navbar a:hover {
+         color: lime;
+      }
+      select 
+      {
+        background-color: rgb(14, 216, 223);
+        color:white;
+        
+      }
+
+
+      .carousel {
+         width: 2000x;
+         height: 700px;
+      }
+
+      .carousel-inner>.item>img {
+         width: 1120px;
+         height: 900px;
+         margin-bottom: 100px;
+      }
+
+      .carousel-inner>.item>a>img {
+         width: 90px;
+      }
+
+      .w-100 {
+         width: 100% !important;
+         height: 5rem;
+      }
+
+      .carousel-inner>.carousel-item>img {
+         height: 90vh;
+         width: 100px;
+      }
+
+      .carousel-caption>h5 {
+         margin-top: 110px;
+         font-size: 20px;
+         color: rgba(255, 255, 255, 0.815);
+
+      }
+
+      .carousel-caption>.p1 {
+         margin-bottom: -25px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.p2 {
+         /* the world */
+         margin-bottom: -160px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.button2 {
+
+         /* margin-bottom: 300px; */
+         display: inline-block;
+         background: var(--black);
+         margin: 15rem;
+         color: var(--white);
+         font-size: 15px;
+         padding: 8px 2rem;
+         cursor: pointer;
+         text-decoration: none;
+      }
+
+      .button2:hover {
+         background: var(--main-color);
+         color: black;
+      }
+
+
+      .carousel {
+         width: 2000x;
+         height: 700px;
+         margin-top: 100px;
+      }
+
+      .carousel-inner>.item>img {
+         width: 1120px;
+         height: 900px;
+      }
+
+      .carousel-inner>.item>a>img {
+         width: 90px;
+      }
+
+      .w-100 {
+         width: 100% !important;
+         height: 5rem;
+      }
+
+      .carousel-inner>.carousel-item>img {
+         height: 90vh;
+         width: 100px;
+      }
+
+      .carousel-caption>h5 {
+         margin-top: 110px;
+         font-size: 20px;
+         color: rgba(255, 255, 255, 0.815);
+
+      }
+
+      .carousel-caption>.p1 {
+         margin-bottom: -25px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.p2 {
+         /* the world */
+         margin-bottom: -160px;
+         font-size: 80px;
+      }
+
+      .carousel-caption>.button2 {
+
+         /* margin-bottom: 300px; */
+         display: inline-block;
+         background: var(--black);
+         margin: 15rem;
+         color: var(--white);
+         font-size: 15px;
+         padding: 8px 2rem;
+         cursor: pointer;
+         text-decoration: none;
+      }
+
+      .button2:hover {
+         background: var(--main-color);
+         color: black;
+      }
+
+
+
+      /* .carousel-inner>.item {
+         position: relative;
+         display: none;
+         -webkit-transition: 0.1s ease-in-out left;
+         -moz-transition: 0.1s ease-in-out left;
+         -o-transition: 0.1s ease-in-out left;
+         transition: 0.1s ease-in-out left;
+       } */
+   </style>
+
+</head>
+
+<body>
+   <!-- header section starts  -->
+
+
+
+   <style type="text/css">
+       * {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         outline: none;
+         border: none;
+         text-decoration: none;
+         text-transform: capitalize;
+      }
+
+      html {
+         font-size: 62.5%;
+         overflow-x: hidden;
+      }
+
+ 
+.header .navbar a:hover{
+   color:lime;
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: white;
+   display: flex;
+   padding-top: 2rem;
+
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+
+.header .logo{
+   font-size: 2.5rem;
+   color:black;
+   margin-left:10px;
+   text-decoration:none;
+}
+
+
+.header .navbar a{
+   font-size: 2rem;
+   
+   margin-right: 30px;
+   
+   color:black;
+   text-decoration:none;
+}
+
+.header .navbar a:hover{
+   color:white;
+   background-color:brown;
+   /* padding-left:25px; */
+   padding: 5px;
+   
+}
+
+.heading{
+   background-size: cover !important;
+   background-position: center !important;
+   padding-top: 10rem;
+   padding-bottom:15rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:lime;
+}
+
+      #travel {
+         text-decoration: none;
+      }
+
+
+
+      /*header css ends*/
+
+      /*section 1 css first*/
+      .home {
+         padding: 0;
+      }
+
+      .home .slide {
+         text-align: center;
+         padding: 2rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-size: cover !important;
+         background-position: center !important;
+         min-height: 60rem;
+      }
+
+      .content {
+         width: 100%;
+
+      }
+
+      .content {
+         display: inline-block;
+      }
+
+      .content span {
+         display: block;
+         font-size: 2.2rem;
+         color: white;
+         padding-bottom: 1rem;
+         animation: fadeIn .2s linear backwards .2s;
+      }
+
+      .content h3 {
+         font-size: 6vw;
+         color: var(--white);
+         text-transform: uppercase;
+         line-height: 1;
+         text-shadow: var(--text-shadow);
+         padding: 1rem 0;
+         animation: fadeIn .2s linear backwards .4s;
+      }
+
+      .content .btn {
+         animation: fadeIn .2s linear backwards .6s;
+      }
+
+      .btn {
+         display: inline-block;
+         background: var(--black);
+         margin-top: 1rem;
+         color: var(--white);
+         font-size: 1.7rem;
+         padding: 1rem 3rem;
+         cursor: pointer;
+      }
+
+      .btn:hover {
+         background: var(--main-color);
+      }
+
+      /*sextion 1 css ends*/
+
+      /*section css starts*/
+      
+      .services {
+         /* padding-right: 10rem;
+         padding-left: 10rem; */
+         margin-top:250px; 
+         background-color: #000000ac;
+         color:darkblack;
+         font-size: 50px;
+         font-weight: bold;
+         background-image: url("/static/images/c5.jpg"); /* The image used */
+      
+  /* background-position: ; Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+         
+      }
+
+      .services .box-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+         gap: 1.5rem;
+      }
+
+      .services .box-container .boxx {
+         padding: 2rem 2rem;
+         text-align: center;
+         background: var(--main-color);
+         cursor: pointer;
+      }
+
+      .services .box-container .boxx:hover {
+         background: var(--black);
+      }
+
+      .services .box-container .boxx img {
+         height: 7rem;
+      }
+
+      .services .box-container .boxx h3 {
+         color: var(--white);
+         font-size: 1.7rem;
+         padding-top: 1rem;
+      }
+
+      .heading-title {
+         text-align: center;
+         margin-bottom: 3rem;
+         font-size: 6rem;
+         text-transform: uppercase;
+         color: var(--black);
+      }
+
+      /* .footer 
+      {
+        width:100%;
+        height:500px;
+        background-color: blue;
+      } */
+
+      .footer {
+         /* background: url(/static/images/footer.jpg) no-repeat;
+         background-size: cover;
+         background-position: center; */
+         background-color:black;
+         color:white;
+         height:400px;
+        
+         padding-top: 5rem;
+         padding-bottom: 5rem;
+      }
+
+      .footer .box-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+         gap: 3rem;
+         padding-left: 10rem;
+         /* padding-top:100px; */
+         
+      }
+
+
+      .footer .box-container .box h3 {
+         color: var(--white);
+         font-size: 2.5rem;
+         padding-bottom: 2rem;
+      }
+
+      .footer .box-container .box a {
+         color: var(--light-white);
+         font-size: 1.5rem;
+         padding-bottom: 1.5rem;
+         display: block;
+         text-decoration: none;
+      }
+
+      .footer .box-container .box a i {
+         color: var(--main-color);
+         padding-right: .5rem;
+         transition: .3s linear;
+         text-decoration: none;
+         margin-bottom: 00px;
+      }
+
+      .footer .box-container .box a:hover i {
+         padding-right: 2rem;
+      }
+     
+
+      .footer .credit {
+         text-align: center;
+         padding-top: 3rem;
+         margin-top: 3rem;
+         border-top: .1rem solid var(--light-white);
+         font-size: 2rem;
+         color: var(--white);
+         background-color:brown;
+      }
+
+      .footer .credit span {
+         color: var(--main-color);
+      }
+
+
+       .footer .box 
+       {
+        width:200px;
+        height:200px;
+       /* margin-top:300px; */
+       }
+
+      
+
+      
+
+      .last 
+      {
+        margin-right: 200px;
+      }
+
+      .fa 
+      {
+         color:brown;
+      }
+
+      .cen 
+      {
+        background-color: red;
+      }
+      .uu 
+{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+      
+
+      
+
+      .last 
+      {
+        margin-right: 200px;
+      }
+
+      .fa 
+      {
+         color:white;
+      }
+
+   
+      .dropdown {
+  position: relative;
+  display: inline-block;
+  font-size:20px;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border:2px solid blue;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* background-color:black; */
+}
+.dropdown:hover .dropbtn
+{
+   background-color:brown;
+   padding:5px;
+   color:white;
+}
+.b  
+ {
+    height: 30px;
+    width: 200px;
+    padding-left: 15px;
+    border: 2px solid;
+    position: sticky;
+ }
+
+ .dropdown1 {
+  position: relative;
+  display: inline-block;
+  font-size:20px;
+ 
+}
+
+.dropdown1-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border:2px solid blue;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+ 
+}
+
+.dropdown1:hover .dropdown1-content1 {
+  display: block;
+  /* background-color:black; */
+}
+.dropdown1:hover .dropbtn1
+{
+   background-color:brown;
+   padding:5px;
+   color:white;
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1><a href="home" class="logo"><img src="/static/images/lj_logo.jpg" width="300px" height="90px">&nbsp;&nbsp; </a></h1>
+  
+          
+        
+        
+        
+        <nav class="navbar">
+          <div class="dropdown">
+                <button class="dropbtn">Provisional Marksheet</button>
+             <div class="dropdown-content">
+                <a href="/add_provisional_request">Send Provisional Marksheet Request</a><br>
+                <a href="/show_provisional_request">View Provisional Marksheet Request</a>
+                </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                <button class="dropbtn">Final Marksheet</button>
+                         <div class="dropdown-content">
+                            <a href="/add_final_request">Send Final Marksheet Request</a><br>
+                            <a href="/show_final_request">View Final Marksheet Request</a><br>
+                            <a href="/show_final_result">View Final Marksheet </a>
+                            </div>
+                            </div>
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <button class="dropbtn">Bonafide Certificate</button>
+                   <div class="dropdown-content">
+                      <a href="/add_bonafide_request">Send Bonafide Certificate Request</a><br>
+                      <a href="/show_bonafide_request">View Bonafide Certificate Request</a><br>
+                     
+                      </div>
+                      </div>
+                <div class="dropdown">
+                         <button class="dropbtn"><a href="history">History</a></button>
+                        <!-- <div class="dropdown-content">
+                           <a href="add_bonafide_request">Send Bonafide Certificate Request</a><br>
+                           <a href="show_bonafide_request">View Bonafide Certificate Request</a><br>
+                          
+                           </div> -->
+                           </div>
+                      <div class="dropdown">
+                
+                         
+              
+       {% if user.is_authenticated %}
+          <div class="dropdown">
+                
+             <button class="dropbtn">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/images/user.jpg" alt="" class="uu">  {{ user.username }}</button>
+             <div class="dropdown-content">
+                
+  <a href="password_change">Change Password</a><br>
+  <a href="logout">Logout</a>
+  {% else %}
+  
+    <a href="/">Login</a>
+  {% endif %}
+                     </nav>
+          
+            
+  
+        </section>
+        <br><br><br><br><br><br><br><br>
+        
+     <style>
+      /* .submit 
+      {
+         margin-left:400px;
+         background-color: blue;
+      } */
+   </style>
+    <div id="kf_content_wrap">
+        <div class="oe_structure"></div>
+        <div class="oe_structure">
+          <section class="s_title">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    </p>
+                  <p>
+                    
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <br/>
+                    <center><h1>About Us</h1></center>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJ Group
+of Institutes is managed by Lok Jagruti Kendra (LJK), a Charitable Trust and a
+Registered Society established in1980 by eminent academicians and visionaries
+like Prof. B.M. Peerzada, former Dean of Commerce Faculty,Gujarat University,</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;" lang="IT"> Padma Bhushan Lord Meghnad Desai (</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">London School of Economics</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;" lang="IT">), Prof. Gautam</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;" lang="IT"> </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;" lang="IT">Appa
+(LSE), Late Prof. M.S. Trivedi,</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> former Vice
+Chancellor, South Gujarat University, renowned jurist Late Shri Girishbhai
+Patel and Shri Subodhbhai Shah. It was envisioned as “a key player in education
+and social development by promoting and nurturing creativity, scholarship,
+innovation and excellence through a chain of quality institutes.”&nbsp; LJK’s mission has been “to establish and
+manage institutions with an environment in which new ideas, delivery strategies
+and scholarship flourish and from where leaders and innovators of tomorrow
+shall emerge.”&nbsp; </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                      <br/>
+                    </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJK runs
+                 27 institutions on 
+                two well-developed environment-friendly campuses with
+dedicated buildings and infrastructure facilities, and offering various
+diploma, undergraduate and postgraduate 
+                programmes 
+                duly
+approved by respective apex bodies. LJ Institutes have over 18000 students and
+700+ faculties engaged in teaching-learning, research and extension activities
+and striving to develop students into complete citizens not only having the
+necessary subject knowledge and skills, but also the empathy towards various
+environmental, social, cultural and other issues affecting the
+                 society.  </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Some of the&nbsp;remarkable initiatives/activities/features of the LJ Institutes are:  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">The</span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"><b>Business Incubator</b>
+is an initiative to encourage, promote and support entrepreneurship and
+innovative Start-ups by bringing national angel syndicates and angel investors
+for funding.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJK has set up <b>LJ Knowledge Foundation</b> to promote
+innovation and start-up interventions in the campus, which has pioneered a
+series of efforts to harness creative potential of students.&nbsp;It is a nodal
+agency of Start-up Innovation Scheme of the Government of Gujarat.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">For promotion of innovation and entrepreneurship, an
+annual <b>LJ Innovation Village</b> is being organised since 2013 displaying
+the projects of students of LJ Institutes as well those from over 10 other
+states of India. </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal; ">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal"></span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">A unique program, <b>Project to Product</b>, in which
+student-projects get converted into productive solutions and then taken to the
+market. </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Collaborating with industry to conduct <b>Corporate &amp;
+Skill Development Training</b> for their employees. More than 5000 employees of
+Ford, Toyota, Suzuki and the Pharma Industry have been trained so far.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family: Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Central Placement Cell</span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> is
+associated with more than 200 leading national and multinational companies to
+facilitate students for the best job.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJ School of Law has has taken a pioneering initiative
+called <b>Law on Wheels </b>designed to serve twin purposes: social as well as
+academic. Under this the students go to interior villages&nbsp; to study the social reality, legal problems
+of different classes of people and to spread legal awareness by rendering legal
+advice and assistance to the socio-economically backward classes. </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Through <b>LJ Sahyog</b> more than 2000 engineering
+students visited 250 villages and successfully developed websites and Facebook
+pages for them, contributing thereby towards Digital India initiative.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJ also runs several <b>Centres of Excellence</b> focused
+on communication/ presentation skills, personality development, etc. to empower
+the students with sharp minds and exceptional talent.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJ</span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"><b>Software Factory </b>prepares
+customized application softwares for business houses and industries.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Regular centre for <b>Conduct of Online Examinations</b>
+such as CAT, MAT, GATE, AIEE, BITS Pilani, GCET, etc.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Congenial learning environment with state-of-the-art
+infrastructure facilities<b> </b>with<b> Technologically Well-Equipped</b> classrooms,
+laboratories, faculty rooms, rich libraries, seminar halls and auditoria.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Learner-centred academic culture without compromise on
+teaching standards and the knowledge distribution system leading to overall
+development of students with balanced emphasis on sports, cultural and other
+extra-curricular activities.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Curriculum enrichment with skill-oriented add-on courses
+and innovative co-curricular activities followed by varied delivery strategies.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Over 2000 computers linked with optic fiber network<b>.</b></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                    </span>
+                    </b>
+                  </p>
+                  <b>
+                  
+                </b>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">International Collaborations</span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> with faculty exchange, student exchange, joint research
+projects and research publications as thrust areas.</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">
+                  </span>
+                  </p>
+                  <p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.25in;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; 
+                </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Strong Alumni Base
+                
+                </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> spread across the country and abroad and occupying key positions in various organizations.  </span>
+                    <i>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    </i>
+                  </p>
+                  <i>
+                  
+                </i>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJK,
+ where education is a passion, the passion which leads to incessant 
+pursuit of knowledge and acquisition of skills, has become the ultimate 
+destination for complete education. </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:78.55pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    <font style="color: rgb(0, 0, 0);">&nbsp;</font>
+                  </p>
+                  <h5 class="BodyA">
+                    <span style="font-family: Verdana, sans-serif;background-color: rgb(12, 3, 101);color:white;font-size:25px;">Feather in the LJK’s Cap: Establishment of LJ University (Lok Jakruti Kendra University)</span>
+                  </h5>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">The
+ track record of the LJ Group of Institutes, its achievements and 
+contribution to the society during the past 37 years has resulted in 
+establishment of the Lok Jagruti Kendra University (LJU) by Gujarat Act 
+No. 19 of 2019. </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    <font style="color: rgb(0, 0, 0);">&nbsp;</font>
+                  </p>
+                  <h5 class="BodyA">
+                    <span style="font-family: Verdana, sans-serif;background-color: rgb(12, 3, 101);color:white;font-size:25px;">Objectives</span>
+                    <span style="font-family: Verdana, sans-serif; font-size: 18px;" class="bg-epsilon text-white"> </span>
+                    <span style="font-weight: bold; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </h5>
+                  <b> </b>
+                  <b> </b>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Affordability: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Affordable higher education of high quality in Gujarat</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Contribution: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Contribute in a big way to local industrial need and social development</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Skill Development: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Focus on skill development, employability and holistic development</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Social Responsibility: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Become a responsible social institution through value creation in the region</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Inclusion: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Inclusive education</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin: 0in 0in 0.0001pt 0.25in; text-indent: -0.25in; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Pedagogy: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Lab-to-land-to-lab pedagogy</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom: 0.0001pt; line-height: 17pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                    <br/>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJU is intended to be </span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">University with a difference </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">with the following agenda:</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Skilling local youth as per cutting edge needs of local and global industries</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">1 % of our graduates to be job creators or self employed </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Access to higher education to around 1 lakh youth in next decade</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Benefit to nearby community through community engagement program</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Collaboration with local industries to work on their challenges </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Capacity building of human resources of local MSMEs and large industries</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Attracting global academic communities through international collaborations for syllabus designing, delivery and evaluation.</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Nurturing graduates to be job ready and also make them entrepreneurial&nbsp;</span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    <font style="color: rgb(0, 0, 0);">&nbsp;</font>
+                  </p>
+                  <h5 class="BodyA">
+                    <span style="font-family: Verdana, sans-serif;background-color: rgb(12, 3, 101);color:white;font-size:25px;">Thrust Areas of the LJU</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </h5>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Engineering Cluster: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">All domains of UG, PG, Ph.D. programs, Applied Engineering,&nbsp; Architecture, Computer Applications, manufacturing</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp;</span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Applied Sciences Cluster: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">UG, PG, Ph.D. in Applied Sciences, Industrial Biotechnology, Agriculture Biotechnology, Material Science, Chemical and Food</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Liberal Arts Cluster: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Social Sciences, Fine Arts, Design, Film and allied studies, Commerce, Management, Applied Economics and allied domains</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Skill Cluster: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Skill Academy, Vocational and blended skill, Skilling industrial human resources, skilling around emerging technology</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Health Cluster: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Ayurveda, Bio Tech, Applied Bio sciences, Agriculture and allied domains</span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    <font style="color: rgb(0, 0, 0);">&nbsp;</font>
+                  </p>
+                  <h5 class="BodyA">
+                    <span style="font-family: Verdana, sans-serif;background-color: rgb(12, 3, 101);color:white;font-size:25px;">Academic Programmes</span>
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                    </b>
+                  </h5>
+                  <b> </b>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Full-time Diploma, UG, PG, and Ph.D. programmes</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Joint programmes with collaborating academia in India and abroad </span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Certificate courses</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Short term professional education programmes</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Extension studies</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Blended MOOC/virtual learning</span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <br/>
+                  </p>
+                  <b> </b>
+                  <h5 class="BodyA">
+                    <span style="font-family: Verdana, sans-serif;background-color: rgb(12, 3, 101);color:white;font-size:25px;">Qualities/ Attributes of LJU Graduate</span>
+                  </h5>
+                  <b> </b>
+                  <b> </b>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Quick to learn new things and implement them</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Quick to adapt to new environment and changes and find solutions to problems</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Be open to new ideas and concepts and shall be able to take the risk of implementing them by rational consideration</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Discipline and integrity</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Ethically and socially responsible</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Innovative and entrepreneurial</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Academic, research, digital and information literacy</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Collaboration and team work</span>
+                  </p>
+                  <p class="BodyA" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Wingdings; font-size: 12pt;">Ø<span style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: 7pt; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal;">&nbsp; </span></span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Strong communicate and interpersonal skills </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <br/>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">LJU has commenced its academic operations from the <b>academic year 2019-20</b> with the following constituent institution: </span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">&nbsp;</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Institution: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">&nbsp;L. J. School of Architecture, L.J. Campus, S. G. Road, Ahmedabad</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal;">
+                    <b>
+                      <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Programme: </span>
+                    </b>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Bachelor of Architecture</span>
+                  </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal;">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;"> </span>
+                  </p>
+                  <p> </p>
+                  <p class="BodyA" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:justify;
+text-justify:inter-ideograph;line-height:normal">
+                    <span style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12pt;">Work
+ for developing academic programmes, systems and processes is in 
+progress. Other constituent institutions and programmes will be added in
+ subsequent years in a phased manner.</span><br><br><br><br><br><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    
+                </main>
+             <section class="footer">
+            
+            <div class="box-container">
+               <div class="box">
+              <h3>Information</h3>
+              <a href="about"> <i class="fas fa-angle-right"></i> About</a>
+              <a href="#"> <i class="fas fa-angle-right"></i> Gallery</a>
+              
+             
+              <a href="feedback"> <i class="fas fa-angle-right"></i> Feedback</a>
+           
+             
+                  <a href="blog"> <i class="fas fa-angle-right"></i> Blogs</a>
+           
+                   </div>
+   
+               <div class="box">
+                  <h3>extra links</h3>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Ask questions</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> About us</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Privacy policy</a>
+                  <a href="#"> <i class="fas fa-angle-right"></i> Terms of use</a>
+               </div>
+   
+               <div class="box">
+                  <h3>Contact info</h3>
+                  <a href="tel://18001210082"> <i class="fas fa-phone"></i> 18001210082 </a>
+                  <a href=" info@ljku.edu.in"> <i class="fas fa-envelope"></i> info@ljku.edu.in </a>
+                  <a href="#"> <i class="fas fa-map"></i>Near Sarkhej-Sanand Circle,Off. S.G. Road, Ahmedabad-382210</a>
+                    
+                      
+               </div>
+   
+
+               
+               <div class="box">
+                  <h3>follow us</h3>
+                  <a href="https://www.facebook.com/lokjagrutiuniversity"> <i class="fab fa-facebook-f"></i> facebook </a>
+                  <a href="https://twitter.com/lj_university"> <i class="fab fa-twitter"></i> twitter </a>
+                  <a href="https://www.instagram.com/lj_university/"> <i class="fab fa-instagram"></i> instagram </a>
+                  <a href="https://www.linkedin.com/school/ljuniversityofficial/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                  <a href="https://www.youtube.com/channel/UC6cUvf8NQf36hIMGj6J1DTg/featured"> <i class="fab fa-youtube"></i> youtube </a>
+                  <a href="https://wa.me/916357000987?text="> <i class="fab fa-whatsapp"></i> whatsapp </a>
+                </div>
+                </div>
+                <br><br><br>
+                <div class="credit">  
+                <a href="#">
+                    <img width="52px" class="last" src="/static/images/ljj.jpg" title="Lok Jagruti University"/>
+                  </a>
+            <span>&copy; All Rights reserved by <a href="#" style="text-decoration:none;color:white";>LJKU</a></span></div>
+   
+         </section>
+   
+   
+         </div>
+         </section>
+         
+</body>
+</html>

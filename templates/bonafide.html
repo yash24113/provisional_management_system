@@ -1,0 +1,34 @@
+ <table border="1px solid black" class="tt">
+            {% for stu in students %}  
+                <tr>
+                    <td>Student Name</td>
+                    <!-- <td>Mr/Ms Khalas Yash Dipeshbhai</td> -->
+                    <td>{{ students.sid.sname }} </td>
+                
+                </tr>
+                <tr>
+                    <td>Enrollment</td>
+                    <td>2021004501210022</td>
+                    <!-- <td>{{ students.enrollment }}</td> -->
+                </tr>
+                <tr>
+                    <td>Instisute</td>
+                    <td>L J Institute Of Computer Applications</td>
+                </tr>
+                <tr>
+                    <td>Programmed</td>
+                    <!-- <td>Master of Computer Application (Integrated)</td> -->
+                    <td>{{ stu.cid.did.name }}</td>  
+                </tr>
+                <tr>
+                    <td>Course Duration</td>
+                    <td>5 years (Integrated Programmed)</td>
+                </tr>
+                <tr>
+                    <td>Medium of Teaching</td>
+                    <td>English</td>
+                </tr>
+                
+                </tr>
+         <!-- {% endfor %}   -->
+        </table>

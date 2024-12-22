@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok Jagruti University</title>
+    <link rel="icon" href="/static/images/ljj.jpg">
+    <style>
+        .d1 
+        {
+            width:900px;
+            height:1390px;
+            border:1px solid black;
+            margin-top:100px;
+        }
+        .image 
+        {
+            margin-top:50px;
+        }
+        .head 
+        {
+            text-align: left;
+            margin-left:100px;
+        }
+        .head1
+        {
+            text-align: left;
+            margin-left:100px;
+        }
+    
+        .ii 
+        {
+            width:30px;
+            height:30px;
+         
+        }
+        .ii1
+        {
+            width:30px;
+            height:30px;
+            text-align: left;
+        }
+        .ii2 
+        {
+            width:30px;
+            height:30px;
+            text-align: right;
+        }
+        .ii3 
+        {
+            width:30px;
+            height:30px;
+       
+        }
+        .hh 
+        {
+            margin-right:0px;  
+        }
+        .footer 
+        {
+            background-color: aqua;
+            width:100%;
+            height:80px;
+            /* border:1px solid black; */
+            margin-top:65px;
+            border-top: 2px solid black;
+            
+        }
+        .d1
+        {
+            background-color: rgb(173, 243, 243);
+            border:5px solid black;
+        }
+        .header 
+        {
+            color:blue;
+            font-size:50px;
+        }
+        .tt 
+        {
+            width:700px;
+          
+            font-size:20px;
+        }
+        .d 
+        {
+            width:700px;
+            height:50px;
+            border:1px solid black;
+            text-align:left;
+        }
+        .footer 
+        {
+            background-color: aqua;
+            width:100%;
+            height:80px;
+            /* border:1px solid black; */
+            margin-top:65px;
+            border-top: 2px solid black;
+            
+        }
+        .spi 
+        {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body class="bb">
+   
+    <center>   
+    <div class="d1">
+        <!-- <img src="/static/images/lj_about.jpg" style="width: 700px;" class="image" data-original-title="" title=""/>-->
+        <h1 class="header">
+            <img src="/static/images/lll.png" style="width:800px">
+           
+           
+        <h1>Semester Performance Report</h1>
+        
+        {% for stu in stu %} 
+        <table  border="1px solid black;" class="tt">  
+            <tr>
+                <td>Programme : <b> {{ stu.did.name }} </b></td> 
+                <td>Semester : <b> 1</b></td>  
+            </tr>
+            <tr>  
+                <td>Specialization : <b>Bachelor of Computer Application</b></td> 
+                <td>Exam Period : <b>Winter-2021</b></td>
+            </tr>
+            
+           
+            <tr>
+                <td>Enrollment No. (New) : <b>{{ stu.enrollment }}</b></td>
+                <td>Enrollment No. (Old) : <b>--</b>  </td>
+            </tr>
+            <tr>
+                <td>Name : <b>{{ stu.sname }}</b></td>
+                <td>Medium of Instruction : <b>English</b></td>
+            </tr>
+           
+           
+          
+            {% endfor %}  
+           
+                <table border="1px solid black;" class="tt">  
+                     <br><br>
+                        <tr>  
+                            <!-- <th>Subject Marks ID</th> -->
+                            <!-- <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Theory (Out of 100/70/50/30)</th>
+                            <th>Internal (Out of 30/20)</th>
+                            <th>Practical (Out of 70/50)</th>
+                            <th>Total</th> -->
+
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Internal Marks (out of 50)</th>
+                            <th>Theory Marks (out of 50)</th> 
+                            <th>Practical Marks (out of 50)</th> 
+                            <th>Total Marks (out of 100/150)</th>  
+                            <!-- <th>Subject Type</th>   -->
+                           
+                           <!-- <th>Total Internal Marks</th> -->
+                           
+                            <!-- <th>Actions</th>   -->
+                        </tr>  
+                        </thead>  
+                        <tbody>  
+                    {% for d in cour %}  
+                        <tr>  
+                            <!-- <td>{{ d.sub_mark_id }}</td>   -->
+                            <td>{{ d.cid.code }}</td>
+                            <td>{{ d.cid.name  }}</td>
+                            
+                            <td>{{ d.total }}</td>
+                            <td>{{ d.c5 }}</td>
+                            <td>{{ d.c6 }}</td>
+                            <td>{{ d.total1 }}</td>
+                            <!-- <td>  
+                                <a href="/delete_sem1_marks/{{ d.sem1_id }}"><span class="glyphicon glyphicon-pencil" >Update</span></a>  
+                                <a href="/delete_sem1_marks/{{ d.sem1_id }}"><span class="glyphicon glyphicon-trash">Delete</span></a>   
+                            </td>   -->
+                           
+                           
+                            </tr>  
+                    {% endfor %}  
+                    </tbody>  
+                </table>
+                <br>
+                <div class="d" >
+                    <h3>&nbsp;&nbsp;&nbsp;Total :    
+
+                        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                         -->
+                        
+                         <!-- aaa : {{con}} -->
+                        <!-- {% for key,value in sum.items %} -->
+                     
+                        <!-- {% endfor %} -->
+
+                        {% for key,value in sum.items %}
+                         {{ value }}
+                        {% endfor %}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                       
+                        Percentage : 
+                      
+                         {{ per }}
+                        </div>
+                        <br>
+                         <div class="d">
+                        <h3> &nbsp;&nbsp;&nbsp;&nbsp;SPI : 
+                      
+                         {{ spi }}
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        PPI : 
+                      
+                         {{ ppi }}
+                        </h3>
+                        </div>
+                            <br>
+                        <div class="d">
+                            <h3> &nbsp;&nbsp;&nbsp;&nbsp;Result : 
+                          
+                             {{ result }}
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        Class : 
+                      
+                         {{ Class }}
+                            </h3>
+                            </div>
+
+                      
+                        
+
+                        
+
+                      </h3>
+                
+                <br><br><br>
+               
+             <footer class="footer">
+                <h3 class="hh">
+                    <b>Location:</b> LJ Campus, Near Sarkhej-Sanand Circle, Off. S.G. Road ,Ahmedabad -382210<br>
+                    <b> Tel:</b> 079-29296364 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                
+                   <b> Email:</b> ljmca@ljinstitutes.org &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+                    <b>Website:</b> ljku.edu.in &nbsp;&nbsp; &nbsp;&nbsp;
+                </h3>
+                </footer>
+            </div> 
+
+</center>
+ 
+</body>
+</html>
